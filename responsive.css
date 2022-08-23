@@ -1,0 +1,36 @@
+@media only screen and (max-width : 825px) {
+    
+/* .icon{
+    display: inline-block;
+}
+.nav-bar ul{
+    flex-direction: column;
+   position: absolute;
+   top: 2.5rem;
+    width: 100vw;
+background-color: black;
+   
+
+} */
+.banner-img{
+    height: 330px;
+    margin-top: 2rem;
+}
+.upper-head{
+    margin-left: -80px;
+}
+.banner-head1{
+    width: 500px;
+}
+.banner-btn{
+    margin-left: -60px;
+}
+.course-sec{
+    height: 65rem;
+    padding: 12px;
+}
+.card{
+margin-left: 3rem;
+}
+
+}

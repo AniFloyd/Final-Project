@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-bar{
+    background-color: limegreen;
+    width:100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 2px 2px rgb(90, 54, 54);
+    position: fixed;
+}
+.logo{
+    padding: 8px;
+    color: white;
+    font-weight: bolder;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li{
+    padding: 8px;
+    
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+ul li a:hover{
+    text-decoration: underline;
+    color:rgb(90, 54, 54);
+}
+.icon{
+    display: none;
+}
+.nav-icon{
+    font-size: 2rem;
+    position: absolute;
+    top: 4px;
+    right: 1rem;
+    display: none;
+    cursor: pointer; 
+
+}
+.nav-icon:active{
+    transform: scale(.90);
+}
+/* bnanner section */
+
+.banner-sec{
+    background-color:limegreen;
+    width: 100%;
+    height: 33rem;
+    box-shadow: 0px 2px 2px rgb(90, 54, 54);
+}
+.banner-head1{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+   margin-top: 6rem;
+}
+
+.upper-head{
+    position: absolute;
+    top: 6rem;
+    left: 8rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 2px rgb(90, 54, 54);
+}
+.banner-head2{
+    color: white;
+    position: relative;
+    left: 1rem;
+    top: -1.5rem;
+}
+.banner-btn{
+    outline: none;
+    border: none;
+    padding: 4px;
+    position: relative;
+    left: 10rem;
+    color: limegreen;
+    font-weight: bolder;
+    transition: transform;
+    transition: background-color;
+    transition-duration: 1s;
+}
+.banner-btn:hover{
+background-color:limegreen;
+color: white;
+}
+.banner-btn:active{
+    transform: scale(.90);
+}
+.banner-img{
+    height: 400px;
+}
+
+/* Course Section */
+.course-sec{
+    background-color:#32cd32;
+    width: 100%;
+    height: 37rem;
+    margin-top: 2px;
+   
+}
+.course-sec-head{
+    color: white;
+    text-shadow: 2px 2px 2px  rgb(90, 54, 54);
+}
+.card{
+    margin-top: 3rem;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.card-body{
+    border-radius: 0px;
+
+    box-shadow: inset 5px 5px 13px #269c26,
+                inset -5px -5px 13px #2ea02e;
+  background-color: #089408;
+  height: 200px;
+
+}
+.cyb-img{
+    height:13.5rem;
+
+}
+.card-title{
+    color: white;
+    text-shadow: 2px 2px 2px  rgb(90, 54, 54);
+}
+.card-text{
+    color: white;
+}
+.card-btn{
+    outline: none;
+    border: none;
+    padding: 4px;
+    color: limegreen;
+    font-weight: bolder;
+    transition: transform;
+    transition: background-color;
+    transition-duration: 1s;
+    
+}
+.card-btn:hover{
+    background-color:limegreen;
+    color: white;
+    }
+    .card-btn:active{
+        transform: scale(.90);
+    }
