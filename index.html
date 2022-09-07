@@ -16,6 +16,8 @@
     <!-- Google Fonts CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Animations.Css CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
@@ -32,42 +34,41 @@
             </svg>
         </div>
 
-        <div class="icon">
-            <i class='bx bx-menu-alt-right nav-icon'></i>
-        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="check-btn">
+            <i class='bx bx-menu-alt-right'></i>
+        </label>
+    
 
-        <div class="show">
-
-        </div>
-
-        <ul class="hide">
-            <li><a href="#"> Home </a> </li>
-            <li> <a href="#course"> Courses </a></li>
-            <li><a href="#"> About Us </a> </li>
-            <li><a href="#"> Contact </a> </li>
+        <ul>
+            <li><a href="index.html"> Home </a> </li>
+            <li> <a href="course.html"> Courses </a></li>
+            <li><a href="about.html"> About Us </a> </li>
+            <li><a href="contact.html"> Contact </a> </li>
         </ul>
-
+        
     </nav>
     <!-- body section -->
 
     <div class="container-fluid banner-sec">
 
         <div class="row">
-            <div class="col-md-6 col-lg-6 col-sm-12  mt-5">
+            <div class="col-md-6 col-lg-6 col-sm-12  mt-5 banner">
                 <h5 class="upper-head mt-4">
                     Welcome To Ani's School.
                 </h5>
                 <h1 class="banner-head1 p-3">
                     Grow your skills by getting admission in our school.
                 </h1>
-                <h4 class="banner-head2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus nostrum ipsam.
-                </h4>
+                <h5 class="banner-head2 mt-4">
+                    Best <span id="banner-span">Computer Training & Personality Development</span> Institute.
+                </h5>
 
                 <button class="banner-btn">
                     Get Admission
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                        class="bi bi-check-c
+                        ircle-fill" viewBox="0 0 16 16">
                         <path
                             d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
                     </svg>
@@ -86,93 +87,34 @@
 
     <!-- courses section -->
 
-    <div class="container-fluid course-sec" id="course">
-        <h1 class="course-sec-head text-center">
-            Our Courses are <span id="type"></span>
-        </h1>
-        <div class="row">
-            <div class="col-md-6 col-lg-3 col-sm-12 ">
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/card-img-removebg-preview.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"> Web Development</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <button class="card-btn">
-                            Choose This Course
-                            <svg xmlns="httcol-lg-3 col-sm-12p://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 col-sm-12">
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/preview.jpg" class="" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Digital Marketing</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <button class="card-btn">
-                            Choose This Course
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 col-sm-12">
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/bus_illustration.png" class="" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Graphics & Animations</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <button class="card-btn">
-                            Choose This Course
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 col-sm-12">
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/cyber-security-illustration-free-vector.jpg" class="cyb-img" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Cyber Security</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <button class="card-btn">
-                            Choose This Course
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
+   
 
-    </div>
+    <!-- About Section -->
+
+
+
+<!-- Contact Page -->
 
 
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
     <script src="script.js"></script>
 </body>
 

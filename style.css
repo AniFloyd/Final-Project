@@ -12,6 +12,7 @@
     font-family: 'Roboto', sans-serif;
     box-shadow: 0px 2px 2px rgb(90, 54, 54);
     position: fixed;
+    z-index: 1;
 }
 .logo{
     padding: 8px;
@@ -24,7 +25,7 @@ ul{
 }
 ul li{
     padding: 8px;
-    
+    display: inline-block;    
 }
 ul li a{
     color: white;
@@ -34,28 +35,24 @@ ul li a:hover{
     text-decoration: underline;
     color:rgb(90, 54, 54);
 }
-.icon{
+.check-btn{
+    font-size: 32px;
     display: none;
 }
-.nav-icon{
-    font-size: 2rem;
-    position: absolute;
-    top: 4px;
-    right: 1rem;
+#click{
     display: none;
-    cursor: pointer; 
-
-}
-.nav-icon:active{
-    transform: scale(.90);
 }
 /* bnanner section */
 
 .banner-sec{
     background-color:limegreen;
     width: 100%;
-    height: 33rem;
+    height: 40rem;
     box-shadow: 0px 2px 2px rgb(90, 54, 54);
+}
+#banner-span{
+    text-shadow: 2px 0px 2px  rgb(90, 54, 54);
+    font-weight: 600;
 }
 .banner-head1{
     color: white;
@@ -88,6 +85,38 @@ ul li a:hover{
     transition: transform;
     transition: background-color;
     transition-duration: 1s;
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out alternate;
+    animation-delay: 2s;
+}
+@keyframes anime {
+   
+    0%{
+        /* transform: translateY(20px);
+        -webkit-transform: translateY(20px);
+        -moz-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        -o-transform: translateY(20px);
+        box-shadow: 0px 40px 10px -18px  rgb(90, 54, 54), 0 40px 16px -12px  rgb(90, 54, 54); */
+        top: 0px;
+        
+    }
+    25%{
+        top: 0px;
+    }
+    50%{
+        top: 15px;
+    }
+    75%{
+        top: 15px;
+        box-shadow: 10px 5px 10px -18px  #035503, 0 40px 16px -12px  #047204;
+    }
+    100%{
+        top: 0px;
+        
+    }
 }
 .banner-btn:hover{
 background-color:limegreen;
@@ -104,13 +133,15 @@ color: white;
 .course-sec{
     background-color:#32cd32;
     width: 100%;
-    height: 37rem;
-    margin-top: 2px;
-   
+    height: 40rem;
+    box-shadow: 0px 2px 2px rgb(90, 54, 54);
 }
 .course-sec-head{
     color: white;
     text-shadow: 2px 2px 2px  rgb(90, 54, 54);
+    position: relative;
+    top:35px;
+    font-family: 'Roboto', sans-serif;
 }
 .card{
     margin-top: 3rem;
@@ -146,6 +177,7 @@ color: white;
     transition: transform;
     transition: background-color;
     transition-duration: 1s;
+    font-family: 'Roboto', sans-serif;
     
 }
 .card-btn:hover{
@@ -153,5 +185,146 @@ color: white;
     color: white;
     }
     .card-btn:active{
+        transform: scale(.90);
+    }
+
+/* About Section */
+#about{
+    background-color:#32cd32;
+    width: 100%;
+    height: 48rem;
+    box-shadow: 0px 2px 2px rgb(90, 54, 54);
+}
+.about-h1{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 2px rgb(90, 54, 54);
+}
+#about-head{
+    width: 37rem;
+    padding: 1rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 2px rgb(90, 54, 54);
+    background-color: #089408;
+}
+.about-img{
+    background-color:rgb(90, 54, 54);
+}
+.about-btn{
+    outline: none;
+    border: none;
+    padding: 4px;
+    color: limegreen;
+    font-weight: bolder;
+    transition: transform;
+    transition: background-color;
+    transition-duration: 1s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about-btn:hover{
+    background-color:limegreen;
+    color: white;
+    }
+    .about-btn:active{
+        transform: scale(.90);
+    }
+.why-h1{
+    color: white;
+    text-shadow: 0px 2px 2px  rgb(90, 54, 54);
+    font-family: 'Roboto', sans-serif;
+}
+.why-card{
+    color: white;
+    text-shadow: 2px 2px 0px  rgb(90, 54, 54);
+    width: 36rem;
+    text-align: justify;
+    font-size:larger;
+    font-family: 'Roboto', sans-serif;
+    background-color: #089408;
+    padding: 15px;
+    
+}
+
+.lists{
+    list-style: square;
+}
+
+/* Contact Page Starts Here */
+#contact{
+    height: 40rem;  background-color:#32cd32;
+    width: 100%;
+    height: 48rem;
+    box-shadow: 2px 2px 2px rgb(90, 54, 54);
+
+}
+.card-box{
+    height:680px;
+    width: auto;
+  
+    box-shadow: 4px 2px 4px 4px rgb(90, 54, 54);
+}
+.mail-icon{
+    color: white;
+    margin-top: 4px;
+    position: relative;
+    top: 10px;
+    font-size: 40px;
+
+}
+.contact-head{
+    color: white;
+    text-shadow: 2px 2px 2px  rgb(90, 54, 54);
+    margin-top: -50px;
+    }
+.contact-para{
+    color: white;
+    text-shadow: 2px 2px 2px  rgb(90, 54, 54);
+}
+.contact-head2{
+    color: white;
+    text-align: left;
+    margin-left: 2px;
+}
+.contact-icon{
+    color: white;
+    font-size: 40px;
+    border: 2px solid   rgb(90, 54, 54);
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.form-sec{
+    margin-top: 5rem;
+    color: white;
+    font-size: large;
+    text-align: left;
+    text-shadow: 2px 2px 2px rgb(90, 54, 54);
+}
+
+.form-head{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    text-shadow: 2px 2px 2px rgb(90, 54, 54);
+}
+.form-btn{
+    outline: none;
+    border: none;
+    padding: 4px;
+    color: limegreen;
+    font-weight: bolder;
+    transition: transform;
+    transition: background-color;
+    transition-duration: 1s;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 40%;
+}
+.form-btn:hover{
+    background-color:limegreen;
+    color: white;
+    }
+    .form-btn:active{
         transform: scale(.90);
     }

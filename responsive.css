@@ -33,4 +33,100 @@ background-color: black;
 margin-left: 3rem;
 }
 
+#about{
+    height: 60rem;
+}
+#about-head{
+    position: relative;
+    left: 4rem;
+    width: 40rem;
+}
+
+}
+
+@media only screen and (max-width : 770px) {
+    #about-head{
+        position: relative;
+        left: 2.3rem;
+    }
+    .banner-img{
+        margin-left: -20px;
+    }
+}
+
+@media only screen and (max-width : 420px) {
+    .banner-head1{
+        width: 400px;
+        text-align: center;
+        margin-top: 15rem;
+    }
+
+    .banner-head2{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .banner-sec{
+        height:59rem;
+    }
+   .banner-btn{
+    margin-left: -28px;
+   }
+    .banner{
+        margin-left: -10px;
+
+    }
+   
+    .course-sec{
+        height: 123rem;
+    }
+    .course-sec-head{
+        font-size: 24px;
+    }
+    #about{
+        height: 80rem;
+    }
+    #about-head{
+        position: relative;
+        left: -1.7rem;
+        width: 414px;
+    }
+    .about-img{
+        height: 240px;
+        margin-left: -4px;
+    }
+
+/* nav bar */
+.nav-bar ul{
+    padding: 8px;
+    position: fixed;
+    height: 30vh;
+    width: 100%;
+    display:block;
+    top: 42px;
+    left: 0;
+    text-align: center;
+    background-color:darkgreen;
+    left: -100%;
+    transition: all .4s ease;
+}
+.check-btn{
+    display: block;
+}
+.nav-bar ul li{
+    display: block;
+   
+}
+ul li a{
+    font-size: larger;
+}
+#click:checked ~ ul{
+    left: 0;
+}
+    
+}
+@media only screen and (max-width : 380px) {
+    .about-img{
+        height: 220px;
+        margin-left: -8px;
+    }
 }
