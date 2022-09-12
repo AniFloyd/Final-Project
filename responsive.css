@@ -1,17 +1,8 @@
 @media only screen and (max-width : 825px) {
     
-/* .icon{
-    display: inline-block;
+#click{
+    display: none;
 }
-.nav-bar ul{
-    flex-direction: column;
-   position: absolute;
-   top: 2.5rem;
-    width: 100vw;
-background-color: black;
-   
-
-} */
 .banner-img{
     height: 330px;
     margin-top: 2rem;
@@ -41,8 +32,11 @@ margin-left: 3rem;
     left: 4rem;
     width: 40rem;
 }
-
+.card-box{
+    height:700px;
 }
+}
+
 
 @media only screen and (max-width : 770px) {
     #about-head{
@@ -52,6 +46,9 @@ margin-left: 3rem;
     .banner-img{
         margin-left: -20px;
     }
+    .contact-para{
+        font-size: smaller;
+    }
 }
 
 @media only screen and (max-width : 420px) {
@@ -60,7 +57,11 @@ margin-left: 3rem;
         text-align: center;
         margin-top: 15rem;
     }
-
+    .upper-head{
+    position: absolute;
+    top:14rem;
+    left:10rem;
+    }
     .banner-head2{
         text-align: center;
         margin-top: 1rem;
@@ -94,12 +95,16 @@ margin-left: 3rem;
         height: 240px;
         margin-left: -4px;
     }
+    #contact{
+        height:92rem;
+    }
+    
 
 /* nav bar */
 .nav-bar ul{
-    padding: 8px;
+    padding:8px;
     position: fixed;
-    height: 30vh;
+    height:30vh;
     width: 100%;
     display:block;
     top: 42px;
@@ -128,5 +133,35 @@ ul li a{
     .about-img{
         height: 220px;
         margin-left: -8px;
+    }
+}
+@media only screen and (max-width : 280px){
+    .upper-head{
+       margin-left:-8.5rem;
+    }
+    .banner-head1{
+        margin-left:-.5rem;
+        width:290px;
+    }
+    .banner-head2{
+        margin-left: -.5rem;
+       
+    }
+    .banner-btn{
+        margin-left: -5.5rem;
+    }
+    .banner-img{
+        height:240px;
+        
+    }
+   
+    #course > div > div:nth-child(n) > div{
+        margin-left:-1.2rem;
+    }
+    .about-img{
+        height:160px;
+    }
+    .contact-img{
+        height: 160px;
     }
 }
