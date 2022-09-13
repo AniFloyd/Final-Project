@@ -3,6 +3,15 @@
 #click{
     display: none;
 }
+.footer-icons{
+ position: relative;
+ left:8rem;
+}
+.footer-h{
+   font-size: small;
+   margin-left:2rem;
+}
+
 .banner-img{
     height: 330px;
     margin-top: 2rem;
@@ -25,7 +34,10 @@ margin-left: 3rem;
 }
 
 #about{
-    height: 60rem;
+    height:80rem;
+}
+#about-footer{
+margin-top:28rem;
 }
 #about-head{
     position: relative;
@@ -35,6 +47,12 @@ margin-left: 3rem;
 .card-box{
     height:700px;
 }
+#achivement{
+    height:55.5rem;
+}
+#achive-footer{
+    margin-top:15rem;
+}
 }
 
 
@@ -43,11 +61,36 @@ margin-left: 3rem;
         position: relative;
         left: 2.3rem;
     }
+    #about{
+        height:93rem;
+    }
+    #about-footer{
+        margin-top:32rem;
+        height:10rem;
+    }
     .banner-img{
         margin-left: -20px;
     }
     .contact-para{
         font-size: smaller;
+    }
+    #footer{
+        height:10rem;
+    }
+    .footer-h{
+        margin-top:7rem;
+    }
+    .footer-icons{
+        margin-left:-24rem;
+    }
+    .logo{
+        width:200px;
+    }
+    #achivement{
+        height:55rem;
+    }
+    #achive-footer{
+        height: 10rem;
     }
 }
 
@@ -67,7 +110,15 @@ margin-left: 3rem;
         margin-top: 1rem;
     }
     .banner-sec{
-        height:59rem;
+        height:65rem;
+    }
+    #footer{
+        margin-top:24rem;
+        height:12rem;
+    }
+    .footer-h{
+        font-size: small;
+        margin-left:-2rem;
     }
    .banner-btn{
     margin-left: -28px;
@@ -84,7 +135,11 @@ margin-left: 3rem;
         font-size: 24px;
     }
     #about{
-        height: 80rem;
+        height:101rem;
+    }
+    #about-footer{
+        margin-top:41rem;
+        height: 12rem;
     }
     #about-head{
         position: relative;
@@ -98,6 +153,28 @@ margin-left: 3rem;
     #contact{
         height:92rem;
     }
+    #al-footer{
+        height: 12rem;
+        margin-top:5em;
+    }
+    #achivement{
+        height:100rem;
+    }
+    #achive-footer{
+        margin-top:60rem;
+        height: 12rem;
+    }
+    #achivement > div > div:nth-child(n){
+        margin-left:2rem;
+    }
+    .item{
+        margin-left:4rem;
+        margin-top: 2rem;
+    }
+    #alumni{
+        height:46rem;
+    }
+    
     
 
 /* nav bar */
@@ -134,6 +211,15 @@ ul li a{
         height: 220px;
         margin-left: -8px;
     }
+    #about{
+        height:110rem;
+    }
+    #about-footer{
+        margin-top:50rem;
+    }
+    .item{
+        margin-left:2rem;
+    }
 }
 @media only screen and (max-width : 280px){
     .upper-head{
@@ -164,4 +250,48 @@ ul li a{
     .contact-img{
         height: 160px;
     }
+    #footer{
+        height:18rem;
+    } 
+   .footer-ul{
+    position: relative;
+    top:6rem;
+    height:20px;
+   }
+   #about{
+    height: 130rem;
+   }
+   #about-footer{
+    margin-top:64rem;
+    height: 18rem;
+   }
+   #alumni{
+    height: 50rem;
+   }
+   #al-footer{
+    height: 18rem;
+   }
+   #al-footer .footer-h{
+    margin-top:8rem;
+    padding: 4px;
+    
+   }
+   .item{
+    margin-left:-1rem ;
+   }
+   #achivement{
+    height:110rem;
+   }
+   #achive-footer{
+    height: 18rem;
+    margin-top:62rem;
+   }
+   #achive-footer .footer-h{
+    margin-top:8rem;
+    padding: 4px;
+    
+   }
+   #achivement > div > div:nth-child(n){
+    margin-left:-2rem;
+   }
 }

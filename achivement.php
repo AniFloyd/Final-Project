@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Achivement</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <!-- Bootsrap CDN -->
@@ -19,58 +18,68 @@
     <!-- Animations.Css CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
-
 <body>
 
-    <!-- NAV-BAR -->
-
-   
-
-    <?php
-    include_once('components/nav.php');
-    ?>
-
-   
-    <!-- body section -->
-
-    <div class="container-fluid banner-sec">
-
-        <div class="row">
-            <div class="col-md-6 col-lg-6 col-sm-12  mt-5 banner">
-                <h5 class="upper-head mt-4">
-                    Welcome To Ani's School.
-                </h5>
-                <h1 class="banner-head1 p-3">
-                    Grow your skills by getting admission in our school.
-                </h1>
-                <h5 class="banner-head2 mt-4">
-                    Best <span id="banner-span">Computer Training & Personality Development</span> Institute.
-                </h5>
-
-                <button class="banner-btn">
-                    Get Admission
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-check-c
-                        ircle-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                    </svg>
-                </button>
-
-            </div>
-            <div class="col-md-6 col-lg-6 col-sm-12 mt-5">
-                <div class="image">
-                    <img src="assets/banner-illustration.png" class="banner-img" alt="" srcset="">
-                </div>
-            </div>
-        </div>
-
+<div class="container-fluid" id="achivement">
+<h1 class="achive-head text-center">
+    HERE IS OUR AWARDS & ACHIVEMENT
+</h1>
+<div class="row">
+  
+   <div class="col-lg-3 col-md-6 col-sm-12">
+    
+        <div class="card-achive mt-5 mx-5" style="width: 14rem;">
+  <img src="assets/4647486-removebg-preview.png" class="card-img-top" alt="...">
+  <div class="card-body-achive">
+    <h5 class="card-title text-center"> BEST TECH SCHOOL</h5>
+    <p class="card-text text-center"><b> Our School achived Best Technological School Of the decade.</b></p>
+  
+  </div>
+</div> 
 
     </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+    
+        <div class="card-achive mt-5 mx-5" style="width: 14rem;">
+  <img src="assets/8601-removebg-preview.png" class="card-img-top" alt="...">
+  <div class="card-body-achive">
+    <h5 class="card-title text-center"> 1500+ Students</h5>
+    <p class="card-text text-center"><b> Our School contains more than 500 students. Lorem ipsum dolor sit amet.</b></p>
+  
+  </div>
+</div> 
 
-    <!-- FOOTER SECTION -->
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+    
+        <div class="card-achive mt-5 mx-5" style="width: 14rem;">
+  <img src="assets/4647486-removebg-preview.png" class="card-img-top" alt="...">
+  <div class="card-body-achive">
+    <h5 class="card-title text-center"> UGC CERTIFIED</h5>
+    <p class="card-text text-center"><b> Our School is certfied by UGC. Lorem ipsum dolor, sit amet.</b></p>
+  
+  </div>
+</div> 
 
-    <div class="container-fluid" id="footer">
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12">
+    
+        <div class="card-achive mt-5 mx-5" style="width: 14rem;">
+  <img src="assets/4647486-removebg-preview.png" class="card-img-top" alt="...">
+  <div class="card-body-achive">
+    <h5 class="card-title text-center">100% Placements</h5>
+    <p class="card-text text-center"><b> Our School Students get 100% best placement with higher salary.</b></p>
+  
+  </div>
+</div> 
+
+    </div>
+   </div>
+
+
+
+</div>
+<div class="container-fluid" id="achive-footer">
     <a href="index.php" class="logo-link mx-5">
         <div class="logo">
             Ani's School <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -94,18 +103,18 @@
     </h6>
     <ul class="footer-ul mt-2">
         <li class="foot-lists">
-        <a href="alumni.php">
-            Notable Alumni
+        <a href="course.php">
+            Courses
         </a>
         </li>
         <li class="foot-lists">
-        <a href="achivement.php">
-            Achivement
+        <a href="about.php">
+            About Us
         </a>
         </li>
         <li class="foot-lists">
-        <a href="faq.php">
-            FAQ'S
+        <a href="contact.php">
+            Contact
         </a>
         </li>
     </ul>
@@ -117,16 +126,6 @@
 
 
 
-
-
-
-
-
-
-
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
-    <script src="script.js"></script>
+    
 </body>
-
 </html>
