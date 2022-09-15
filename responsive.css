@@ -26,8 +26,11 @@
     margin-left: -60px;
 }
 .course-sec{
-    height: 65rem;
+    height:73rem;
     padding: 12px;
+}
+#course-footer{
+    margin-top:30rem;
 }
 .card{
 margin-left: 3rem;
@@ -48,11 +51,30 @@ margin-top:28rem;
     height:700px;
 }
 #achivement{
-    height:55.5rem;
+    height:100rem;
+}
+#achivement > div.row{
+    margin-left:2rem;
 }
 #achive-footer{
     margin-top:15rem;
 }
+#achive-footer{
+    margin-top:33rem;
+}
+#achivement > div.heritage > div > div:nth-child(1) > img{
+    width:100%;
+    height:400px;
+    margin-top:3rem;
+}
+#faq-footer{
+    margin-top:2rem;
+}
+#footer{
+    position: absolute;
+    top:69rem;
+}
+
 }
 
 
@@ -74,23 +96,52 @@ margin-top:28rem;
     .contact-para{
         font-size: smaller;
     }
+    #course-footer{
+        height: 10rem;
+    }
     #footer{
-        height:10rem;
+    height:10rem;
+    position: absolute;
+    top:68rem;
+    }
+    #contact-footer{
+        height: 14rem;
     }
     .footer-h{
         margin-top:7rem;
     }
     .footer-icons{
-        margin-left:-24rem;
+        margin-left:-22rem;
+    }
+    #achive-footer > div > a:nth-child(1) > i{
+        margin-left:-25px;
+    }
+    #faq-footer > div > a:nth-child(1) > i{
+        margin-left:-25px;
+    }
+    #about-footer > div > a:nth-child(1) > i{
+        margin-left: -25px;
+    }
+    #course-footer > div > a:nth-child(1) > i{
+        margin-left: -25px;
     }
     .logo{
         width:200px;
     }
     #achivement{
-        height:55rem;
+        height:95rem;
     }
     #achive-footer{
         height: 10rem;
+    }
+    #faq-footer{
+        height: 10rem;
+    }
+    #al-footer{
+        height:14rem;
+    }
+    #al-footer > div > a:nth-child(1) > i{
+        margin-left:-2rem;
     }
 }
 
@@ -98,11 +149,12 @@ margin-top:28rem;
     .banner-head1{
         width: 400px;
         text-align: center;
-        margin-top: 15rem;
+    }
+    #contact-footer{
+        margin-top:2rem;
     }
     .upper-head{
     position: absolute;
-    top:14rem;
     left:10rem;
     }
     .banner-head2{
@@ -110,11 +162,17 @@ margin-top:28rem;
         margin-top: 1rem;
     }
     .banner-sec{
-        height:65rem;
+        height:50rem;
     }
     #footer{
-        margin-top:24rem;
+        margin-top:60rem;
         height:12rem;
+    }
+    .form-sec{
+        margin-left:1rem;
+    }
+    .card-box{
+        height:35rem;
     }
     .footer-h{
         font-size: small;
@@ -129,7 +187,11 @@ margin-top:28rem;
     }
    
     .course-sec{
-        height: 123rem;
+        height:135rem;
+    }
+    #course-footer{
+        margin-top:90rem;
+        height: 12rem;
     }
     .course-sec-head{
         font-size: 24px;
@@ -151,22 +213,20 @@ margin-top:28rem;
         margin-left: -4px;
     }
     #contact{
-        height:92rem;
+        height:85rem;
     }
     #al-footer{
         height: 12rem;
         margin-top:5em;
     }
     #achivement{
-        height:100rem;
+        height:172rem;
     }
     #achive-footer{
-        margin-top:60rem;
+        margin-top:105rem;
         height: 12rem;
     }
-    #achivement > div > div:nth-child(n){
-        margin-left:2rem;
-    }
+    
     .item{
         margin-left:4rem;
         margin-top: 2rem;
@@ -174,7 +234,17 @@ margin-top:28rem;
     #alumni{
         height:46rem;
     }
-    
+    #faq{
+        height: 45rem;
+    }
+    #faq-footer{
+        height: 12rem;
+        margin-top:7rem;
+    }
+
+    .footer-h{
+        width: 220px;
+    }
     
 
 /* nav bar */
@@ -220,18 +290,46 @@ ul li a{
     .item{
         margin-left:2rem;
     }
+    #achivement > div.row > div:nth-child(n){
+        margin-left:-1.2rem;
+    }
+    .banner-head1{
+        margin-left:-2rem;
+    }
+    .banner-head2{
+        text-align: left;
+    }
+    .upper-head{
+        margin-left:-9rem;
+    }
+    .banner-img{
+        height:320px;
+    }
+    .banner-btn{
+        margin-left: -8rem;
+    }
+    .footer-h{
+        width: 220px;
+    }
+    #achivement > div.row > div:nth-child(n){
+        margin-left:-2rem;
+    }
+    .heriatge{
+        background-color: limegreen;
+    }
+    #achive-footer{
+        margin-top:110rem;
+        height:16rem;
+    }
 }
 @media only screen and (max-width : 280px){
     .upper-head{
        margin-left:-8.5rem;
     }
     .banner-head1{
-        margin-left:-.5rem;
-        width:290px;
-    }
-    .banner-head2{
-        margin-left: -.5rem;
-       
+        text-align: left;
+        margin-left:2px;
+        width:260px;
     }
     .banner-btn{
         margin-left: -5.5rem;
@@ -240,7 +338,18 @@ ul li a{
         height:240px;
         
     }
-   
+    .banner-sec{
+        height:45rem;
+    }
+    .card-box{
+        height:25rem;
+    }
+    #contact{
+        height:70rem;
+    }
+   #course-footer{
+    height: 18rem;
+   }
     #course > div > div:nth-child(n) > div{
         margin-left:-1.2rem;
     }
@@ -252,14 +361,29 @@ ul li a{
     }
     #footer{
         height:18rem;
+        margin-top:32rem;
     } 
    .footer-ul{
     position: relative;
     top:6rem;
     height:20px;
+    font-size: small;
+   }
+   .footer-h{
+    margin-left:-80px;
+    margin-top:8rem;
+   }
+   #course-footer > div > a:nth-child(1) > i{
+    margin-left:-28px;
+   }
+   #course-footer > a > div{
+    margin-left:20px;
    }
    #about{
     height: 130rem;
+   }
+   #contact-footer{
+    height: 16rem;
    }
    #about-footer{
     margin-top:64rem;
@@ -280,11 +404,20 @@ ul li a{
     margin-left:-1rem ;
    }
    #achivement{
-    height:110rem;
+    height:195rem;
    }
+   .heritage-head{
+    margin-left: 1.2rem;
+   }
+   .heritage-para{
+    margin-left:1.2rem;
+   }
+   #achivement > div.row > div:nth-child(n){
+    margin-left:-4.5rem;
+}
    #achive-footer{
     height: 18rem;
-    margin-top:62rem;
+    margin-top:120rem;
    }
    #achive-footer .footer-h{
     margin-top:8rem;
@@ -293,5 +426,12 @@ ul li a{
    }
    #achivement > div > div:nth-child(n){
     margin-left:-2rem;
+   }
+   #faq-footer{
+    height: 18rem;
+    margin-top:10rem;
+   }
+   #faq{
+    height:60rem;
    }
 }

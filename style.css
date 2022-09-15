@@ -50,7 +50,7 @@ ul li a:hover{
 .banner-sec{
     background-color:limegreen;
     width: 100%;
-    height:39rem;
+    height:30rem;
     box-shadow: 0px 2px 2px rgb(90, 54, 54);
 }
 #banner-span{
@@ -136,8 +136,18 @@ color: white;
 .course-sec{
     background-color:#32cd32;
     width: 100%;
-    height: 40rem;
+    height: 42rem;
     box-shadow: 0px 2px 2px rgb(90, 54, 54);
+}
+#course-footer{
+    background-color:limegreen;
+    box-shadow: 4px 4px 6px 8px rgb(90, 54, 54);
+    height:8.5rem;
+    width:100%;
+    position: absolute;
+    top:35rem;
+    display: flex;
+    justify-content: space-around;
 }
 .course-sec-head{
     color: white;
@@ -268,17 +278,11 @@ color: white;
 #contact{
     height: 40rem;  background-color:#32cd32;
     width: 100%;
-    height: 48rem;
+    height:50.8rem;
     box-shadow: 2px 2px 2px rgb(90, 54, 54);
 
 }
-.card-box{
-    height:570px;
-    width:max-content;
-    margin-left:6rem;
-    box-shadow: 4px 2px 4px 4px rgb(90, 54, 54);
-    margin-top:2rem;
-}
+
 .mail-icon{
     color: white;
     margin-top: 4px;
@@ -299,7 +303,6 @@ color: white;
 }
 .contact-head2{
     color: white;
-    text-align: left;
     margin-left: 2px;
 }
 .contact-icon{
@@ -310,6 +313,19 @@ color: white;
     padding: 4px;
     position: relative;
     top:-1rem;    
+}
+#contact-footer{
+    box-shadow: 4px 4px 6px 8px rgb(90, 54, 54);
+    height:8.5rem;
+    width:100%;
+    margin-top:3rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: limegreen;
+}
+#inp:focus{
+    background-color: #035503;
+    color: white;
 }
 
 .form-sec{
@@ -348,14 +364,13 @@ color: white;
     }
 /* FOOTER SECTION */
 #footer{
-    background-color:limegreen;
     box-shadow: 4px 4px 6px 8px rgb(90, 54, 54);
     height:8.5rem;
     width:100%;
-    position: absolute;
-    top:31rem;
+    margin-top:3rem;
     display: flex;
     justify-content: space-around;
+    background-color: limegreen;
 }
 
 .footer-ul{
@@ -429,8 +444,34 @@ cursor: pointer;
 /* ACHIVEMENT ARAE */
 #achivement{
     background-color: limegreen;
-    height: 39rem;
+    height:68rem;
 }
+.heritage{
+    color: white;
+    text-shadow: 2px 2px 2px rgb(90, 54, 54);
+}
+.heritage-head{
+    margin-top: 5rem;
+}
+.heritage-btn{
+    outline: none;
+    border: none;
+    padding: 4px;
+    color: limegreen;
+    font-weight: bolder;
+    transition: transform;
+    transition: background-color;
+    transition-duration: 1s;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 30%;
+}
+.heritage-btn:hover{
+    background-color:limegreen;
+    color: white;
+    }
+    .heritage-btn:active{
+        transform: scale(.90);
+    }
 .achive-head{
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -463,18 +504,45 @@ box-shadow: inset 5px 5px 1px #228b22,
             inset -5px -5px 1px #42ff42;
             padding: 10px;
 }
+.card-achive:hover{
+    box-shadow: 2px 2px 4px #035503;
+    cursor:pointer;
+}
 #achive-footer{
     background-color:limegreen;
     box-shadow: 4px 4px 6px 8px rgb(90, 54, 54);
     height:8.5rem;
     width:100%;
     position: absolute;
-    top:31rem;
+    top:60rem;
     display: flex;
     justify-content: space-around;
 }
 /* FAQ SECTION */
 #faq{
     background-color: limegreen;
-    height:39rem;
+    height:42rem;
 }
+.box{
+    color: white;
+    padding:20px;
+    font-family: 'Roboto', sans-serif;
+margin-top: 5rem;
+border: 2px solid #035503;
+}
+#accordionFlushExample > div:nth-child(n){
+    background-color:#035503;
+    color: white;
+}
+
+#faq-footer{
+    background-color:limegreen;
+    box-shadow: 4px 4px 6px 8px rgb(90, 54, 54);
+    height:8.5rem;
+    width:100%;
+    position: absolute;
+    top:37rem;
+    display: flex;
+    justify-content: space-around; 
+}
+

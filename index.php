@@ -68,7 +68,67 @@
 
     </div>
 
-    <!-- FOOTER SECTION -->
+    <!-- CONTACT SECTION -->
+     <div class="container-fluid text-center" id="contact">
+
+        <div class="row">
+          
+                <div class="col-md-6 lg-6 sm-12 mt-5">
+        
+                    <div class="card-box">
+                    
+                       <img src="assets/seo-g37cd1a991_1920-removebg-preview-removebg-preview.png" class="contact-img" alt="" srcset="">
+                       <h2 class="contact-head">
+                        Contact Us 
+                       </h2>
+                        <!-- <p class="contact-para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla a eveniet, cumque veniam itaque quas! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora voluptatibus sit consectetur.
+                        </p> -->
+                       <h4 class="contact-head2">
+                        <i class='bx bxs-envelope mail-icon'> </i>
+                        : anirban7333@gmail.com
+                       </h4>
+                       <h4 class="contact-head2">
+                        <i class='bx bx-phone mail-icon'></i>
+                        : 1234567890
+                       </h4>
+                      <h4 class="contact-head2">
+                        <i class='bx bx-globe mail-icon'></i>
+                        : Kolkata, West Bengal
+                      </h4>
+                      <i class='bx bxl-facebook-circle contact-icon mt-4'></i>
+                      <i class='bx bxl-twitter contact-icon mt-4'></i>
+                      <i class='bx bxl-instagram contact-icon mt-4'></i>
+                    
+                    </div>
+                    
+                    </div>   
+                    <div class="col-md-6 lg-6 sm-12 text-center mt-5">
+                        <h1 class="form-head">
+                            Get Admission
+                        </h1>
+                        <form class="form-sec">
+                            <div class="mb-3">
+                                <label for="" class="form-label"> Enter Your Name</label>
+                                <input type="text" placeholder="Enter Your Full Name" name="name" class="form-control" id="inp" aria-describedby="">
+                                <label for="" class="form-label mt-4"> Enter Your Course</label>
+                                <input type="text" placeholder="Enter Your Course" name="course" class="form-control" id="inp" aria-describedby="">
+                              <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+                              <input type="email" name="email" placeholder="Enter Your Valid Email Adress" required class="form-control" id="inp" aria-describedby="emailHelp">
+                              
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+                              <input type="password" placeholder="Enter Your Password" name="password" class="form-control" id="inp">
+                            </div>
+                            <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" name="submit" class="form-btn">Submit</button>
+                          </form>
+                    </div>
+                     <!-- FOOTER SECTION -->
 
     <div class="container-fluid" id="footer">
     <a href="index.php" class="logo-link mx-5">
@@ -113,6 +173,8 @@
 
 </div>
 
+        </div>
+   
 
 
 

@@ -76,9 +76,33 @@
     </div>
    </div>
 
-
+   <div class="heritage">
+   <h1 class="achive-head text-center mt-5">
+        HERITAGE OF OUR SCHOOL
+    </h1>
+   <div class="row">
+   <div class="col-md-6 col-lg-6 col-sm-12">
+    <img src="assets/8601-removebg-preview.png" alt="">
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+        <h3 class="heritage-head">
+            Know About Our School
+        </h3>
+    <p class="heritage-para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda non, corporis et blanditiis vero deserunt. Saepe corporis numquam doloribus laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laborum, ipsa qui unde modi fugit debitis commodi nobis aut voluptates vero sequi reprehenderit magni ex nesciunt molestias. Repellat minus molestias ea sint praesentium. Soluta nulla deserunt accusamus minus? Nulla eaque aspernatur ea sint laborum voluptatibus rem est, facere mollitia accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum laboriosam distinctio placeat pariatur quas reiciendis in ea illo omnis, fugit, ipsum porro facilis delectus temporibus voluptate, quidem dolor officia tempore aperiam. Facere nesciunt hic minima, sequi commodi autem tempora in temporibus labore nihil vero laboriosam eaque id vel cupiditate modi!
+    </p>
+    <button class="heritage-btn">
+        Know More
+    </button>
+    </div>
+   </div>
+   
+   </div>
+ 
 
 </div>
+
+<!-- FOOTER SECTION -->
 <div class="container-fluid" id="achive-footer">
     <a href="index.php" class="logo-link mx-5">
         <div class="logo">
@@ -120,7 +144,7 @@
     </ul>
     
 
-</div>
+</div> 
 
 
 
