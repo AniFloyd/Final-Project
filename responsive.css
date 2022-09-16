@@ -7,11 +7,6 @@
  position: relative;
  left:8rem;
 }
-.footer-h{
-   font-size: small;
-   margin-left:2rem;
-}
-
 .banner-img{
     height: 330px;
     margin-top: 2rem;
@@ -37,7 +32,7 @@ margin-left: 3rem;
 }
 
 #about{
-    height:80rem;
+    height:95em;
 }
 #about-footer{
 margin-top:28rem;
@@ -72,12 +67,13 @@ margin-top:28rem;
 }
 #footer{
     position: absolute;
-    top:69rem;
+    top:235rem;
+}
+.login-sec{
+  margin-left: 5rem;
 }
 
 }
-
-
 @media only screen and (max-width : 770px) {
     #about-head{
         position: relative;
@@ -99,20 +95,19 @@ margin-top:28rem;
     #course-footer{
         height: 10rem;
     }
-    #footer{
-    height:10rem;
-    position: absolute;
-    top:68rem;
+    #footer > a > div{
+        margin-left:-12rem;
+    }
+    .adress-head{
+        margin-left:4rem;
     }
     #contact-footer{
         height: 14rem;
     }
-    .footer-h{
-        margin-top:7rem;
+    .footer-ul{
+        margin-left:-5px;
     }
-    .footer-icons{
-        margin-left:-22rem;
-    }
+    
     #achive-footer > div > a:nth-child(1) > i{
         margin-left:-25px;
     }
@@ -123,6 +118,9 @@ margin-top:28rem;
         margin-left: -25px;
     }
     #course-footer > div > a:nth-child(1) > i{
+        margin-left: -25px;
+    }
+    #contact-footer > div > a:nth-child(1) > i{
         margin-left: -25px;
     }
     .logo{
@@ -165,8 +163,26 @@ margin-top:28rem;
         height:50rem;
     }
     #footer{
-        margin-top:60rem;
-        height:12rem;
+        margin-top:100rem;
+        height:30rem;
+        
+    }
+    #footer > div.footer-icons > a:nth-child(1) > i{
+        margin-top:15rem;
+        margin-left:14rem;
+    }
+    .info-head{
+        margin-top:14rem;
+        margin-left:-8rem;
+    }
+    #footer > div.info.mt-3 > ul > li:nth-child(n){
+        margin-left:-10rem;
+    }
+    .adress-head{
+        margin-left:12rem;
+    }
+    #footer > a > div{
+        margin-left:-112px;
     }
     .form-sec{
         margin-left:1rem;
@@ -174,10 +190,7 @@ margin-top:28rem;
     .card-box{
         height:35rem;
     }
-    .footer-h{
-        font-size: small;
-        margin-left:-2rem;
-    }
+   
    .banner-btn{
     margin-left: -28px;
    }
@@ -197,20 +210,26 @@ margin-top:28rem;
         font-size: 24px;
     }
     #about{
-        height:101rem;
+        height:70rem;
     }
     #about-footer{
         margin-top:41rem;
         height: 12rem;
     }
     #about-head{
-        position: relative;
-        left: -1.7rem;
-        width: 414px;
+display: none;
+        /* width:10px;
+        margin-left:-50rem; */
+    }
+    #about > div > div:nth-child(1){
+        width:0px;
     }
     .about-img{
-        height: 240px;
-        margin-left: -4px;
+        height:250px;
+        margin-left:-6.2rem;
+    }
+    #about > div > div:nth-child(2){
+        width:0px;
     }
     #contact{
         height:85rem;
@@ -242,8 +261,12 @@ margin-top:28rem;
         margin-top:7rem;
     }
 
-    .footer-h{
-        width: 220px;
+    .login-sec{
+       width:25rem;
+        margin-left:-1rem;
+    }
+    .form-input{
+        width:20rem;
     }
     
 
@@ -320,6 +343,12 @@ ul li a{
     #achive-footer{
         margin-top:110rem;
         height:16rem;
+    }
+    .login-sec{
+        width:22rem;
+    }
+    .form-input{
+        width:18rem;
     }
 }
 @media only screen and (max-width : 280px){
@@ -434,4 +463,16 @@ ul li a{
    #faq{
     height:60rem;
    }
+   .login-sec{
+    width:16rem;
+}
+.form-input{
+    width:13.5rem;
+}#contact-footer > h6{
+    margin-top:8rem;
+    padding:10px;
+}
+#contact-footer > div > a:nth-child(1) > i{
+    margin-left:-30px;
+}
 }

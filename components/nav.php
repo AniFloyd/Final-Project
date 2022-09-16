@@ -41,8 +41,9 @@
 
     <ul class="hide">
         <li><a href="index.php"> Home </a> </li>
-        <li> <a href="course.php"> Courses </a></li>
-        <li><a href="about.php"> About Us </a> </li>
+        <li> <a href="alumni.php"> Notable Alumni </a></li>
+        <li><a href="achivement.php"> Achivements </a> </li>
+        <li><a href="faq.php"> FAQ's </a> </li>
         <li><a href="contact.php"> Contact </a> </li>
     </ul>
 
