@@ -87,7 +87,7 @@ Submit
 </div>
 
 </div>
-<div id="al-footer">
+<div id="footer-achive">
         <div class="container">
             <div class="row">
 

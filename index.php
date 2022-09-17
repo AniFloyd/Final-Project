@@ -267,10 +267,11 @@ if (isset($_POST['submit'])) {
                     if($submit == true){
                        echo `<script>
                        swal({
-                        title: "Good job!",
-                        text: "You clicked the button!",
-                        icon: "success",
-                        button: "Aww yiss!",
+                        swal({
+                            title: "Your Admission Is Done",
+                            text: "Thank You For Your Admission",
+                            icon: "success",
+                          });,
                       });
                        </script>`;
                     }
@@ -360,11 +361,9 @@ if (isset($_POST['submit'])) {
 
 
 
-
-<!-- jq cdn -->
-<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-                     <!-- SWEET ALERT CDN -->
-    
+            <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+                    <!-- TYPED JS CDN -->
             <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
             <script src="script.js"></script>
 </body>

@@ -108,6 +108,7 @@ margin-left:5rem;
     .contact-para{
         font-size: smaller;
     }
+   
     #course-footer{
         height: 10rem;
     }
@@ -124,9 +125,6 @@ margin-left:5rem;
         margin-left:-5px;
     }
     
-    #achive-footer > div > a:nth-child(1) > i{
-        margin-left:-25px;
-    }
     #faq-footer > div > a:nth-child(1) > i{
         margin-left:-25px;
     }
@@ -143,10 +141,7 @@ margin-left:5rem;
         width:200px;
     }
     #achivement{
-        height:95rem;
-    }
-    #achive-footer{
-        height: 10rem;
+        height:100rem;
     }
     #course > div > div:nth-child(n){
         margin-left:-1rem;
@@ -454,6 +449,7 @@ ul li a{
     padding: 4px;
     
    }
+   
    #achivement > div > div:nth-child(n){
     margin-left:-2rem;
    }
