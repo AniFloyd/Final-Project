@@ -107,7 +107,11 @@
 </div>
 
 <!-- FOOTER SECTION -->
-<div class="container-fluid" id="footer-achive">
+<div id="footer-achive">
+        <div class="container">
+            <div class="row">
+
+                <div class="footer-nav col-lg-3 col-md-6 col-sm-6">
                 <a href="index.php" class="logo-link mx-5">
                     <div class="logo">
                         Ani's School <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
@@ -122,38 +126,47 @@
                         Call : 91+1234567890
                     </h5>
                 </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer-icons mt-4">
+                <ul class="ul-icons">
+                    <h5 class="icon-head">
+                        Find Us On 
+                    </h5>
+                <i class='bx bxl-facebook-circle ul-icons mt-4'></i>
+                    <i class='bx bxl-twitter ul-icons mt-4'></i>
+                    <i class='bx bxl-instagram ul-icons mt-4'></i>
+                </ul>
+                </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                <ul class="footer-ul1 mt-4">
+                    <h6 class="ul-head">
+                    Quick Links
+                    </h6>
+                    <li> <a href="index.php"> Home </a> </li>
+                    <li> <a href="index.php #course"> Course</a> </li>
+                    <li> <a href="index.php #about"> About Us</a> </li>
+                    <li> <a href="index.php #contact"> Contact</a> </li>
+                </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="info mt-3">
                     <h3 class="info-head">
                         Informations For
                     </h3>
                     <ul class="footer-ul">
-                    <li> <a href="#course"> Digital Marketing Course</a> </li>
-                    <li><a href="#course"> Website Development Course</a></li>
+                    <li> <a href="index.php #course"> Digital Marketing Course</a> </li>
+                    <li><a href="index.php #course"> Website Development Course</a></li>
+                    <li><a href="index.php #course"> Cyber Security Course</a></li>
+                    <li><a href="index.php #course"> Graphics & Animations Course</a></li>
                     </ul>
                 </div>
-                <div class="footer-icons">
-                    <a href="#">
-                        <i class='bx bxl-facebook-circle contact-icon'></i>
-                    </a>
-                    <a href="#"><i class='bx bxl-twitter contact-icon'></i></a>
-                    <a href="#"> <i class='bx bxl-instagram contact-icon'></i></a>
-
                 </div>
 
-                <ul class="footer-ul mt-3">
-                    <h6 class="ul-head">
-                    Quick Links
-                    </h6>
-                    <li> <a href="index.php"> Home </a> </li>
-                    <li> <a href="#course"> Course</a> </li>
-                    <li> <a href="#about"> About Us</a> </li>
-                    <li> <a href="#contact"> Contact</a> </li>
-                </ul>
-
-
-
-
             </div>
+        </div>
+    </div>
 
 
 

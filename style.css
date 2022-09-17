@@ -195,7 +195,7 @@ color: white;
 #about{
     background-color:#32cd32;
     width: 100%;
-    height:58rem;
+    height:65rem;
     box-shadow: 0px 2px 2px rgb(90, 54, 54);
 }
 #about-footer{
@@ -354,43 +354,46 @@ color: white;
 /* FOOTER SECTION */
 #footer{
     box-shadow: 4px 4px 6px 8px rgb(90, 54, 54);
-    height:15rem;
+    height:auto;
     width:100%;
     margin-top:3rem;
     display: flex;
     justify-content: space-around;
     background-color: limegreen;
     font-family: 'Roboto', sans-serif;
+    
 }
 .adress{
     color: whitesmoke;
     text-align: left;
-    position: relative;
-    top:2.2rem;
-    left:-31rem;
     height:15px;
+    margin-left:4rem;
 }
+
 .info-head{
     color: white;
     text-shadow: 2px 2px 2px black;
-    margin-left: 2rem;
 }
-.info{
-    margin-left:-45rem;
-    text-align: left;
-}
-.footer-icons{
-margin-top: 12rem;
-margin-left:-38rem;
+.ul-icons{
+flex-direction: column;
+color: white;
+    font-size:30px;
+    padding:2px;
 }
 .footer-ul{
     flex-direction: column;
 }
+.footer-ul1{
+    flex-direction: column;
+}
+.footer-ul li{
+    text-align: left;
+}
 .ul-head{
     color: whitesmoke;
-    /* font-weight: bolder; */
+    
     text-shadow: 2px 2px 2px black;
-}
+} 
 
 /* CARSOUEL */
 .owl-theme{
@@ -399,7 +402,7 @@ top: 8rem;
 }
 #alumni{
     background-color: limegreen;
-    height:39rem;
+    height:50rem;
 }
 .alumni-head{
         color: white;
@@ -409,6 +412,10 @@ top: 8rem;
         top:5rem;
     
 }
+#al-footer > div > div > div.footer-nav.col-lg-3.col-md-6.col-sm-6 > div > h5{
+    margin-left:-4rem;
+}
+
 .alumni-btn{
     outline: none;
     border: none;
@@ -428,13 +435,19 @@ top: 8rem;
     .alumni-btn:active{
         transform: scale(.90);
     }
+    #al-footer > div > div > div:nth-child(4) > div > ul{
+        margin-left: -2rem;
+    }
+    .item{
+        margin-top:5rem;
+    }
     #al-footer{
         box-shadow: 4px 4px 6px 8px rgb(90, 54, 54);
+    height:auto;
     width:100%;
     margin-top:0rem;
     display: flex;
     justify-content: space-around;
-    height:15rem;
     background-color: limegreen;
     font-family: 'Roboto', sans-serif;
     
@@ -446,16 +459,20 @@ top: 8rem;
 }
 #footer-achive{
     box-shadow: 4px 4px 6px 8px rgb(90, 54, 54);
+    height:auto;
     width:100%;
-    margin-top:-10rem;
+    margin-top:0rem;
     display: flex;
     justify-content: space-around;
-    height:15rem;
     background-color: limegreen;
     font-family: 'Roboto', sans-serif;
-    
 }
-
+#footer-achive > div > div > div.footer-nav.col-lg-3.col-md-6.col-sm-6 > div > h5{
+    margin-left: -4rem;
+}
+#footer-achive > div > div > div:nth-child(4) > div > ul{
+    margin-left:-2rem;
+}
 .heritage{
     color: white;
     text-shadow: 2px 2px 2px rgb(90, 54, 54);
@@ -535,7 +552,7 @@ box-shadow: inset 5px 5px 1px #228b22,
     color: white;
     padding:20px;
     font-family: 'Roboto', sans-serif;
-margin-top: 5rem;
+margin-top:8rem;
 border: 2px solid #035503;
 }
 #accordionFlushExample > div:nth-child(n){
@@ -545,13 +562,19 @@ border: 2px solid #035503;
 
 #faq-footer{
     box-shadow: 4px 4px 6px 8px rgb(90, 54, 54);
+    height:auto;
     width:100%;
-    margin-top:-3rem;
+    margin-top:0rem;
     display: flex;
     justify-content: space-around;
-    height:15rem;
     background-color: limegreen;
     font-family: 'Roboto', sans-serif;
+}
+#faq-footer > div > div > div:nth-child(4) > div > ul{
+    margin-left:-2rem;
+}
+#faq-footer > div > div > div.footer-nav.col-lg-3.col-md-6.col-sm-6 > div > h5{
+    margin-left: -3.5rem;
 }
 
 /* LOG IN PAGE */
