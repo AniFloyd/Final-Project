@@ -1,3 +1,26 @@
+<?php
+require 'config.php';
+$submit =  false;
+if (isset($_POST['submit'])) {
+    $name = $_POST['name'];
+    $mail = $_POST['mail'];
+    $course = $_POST['course'];
+
+    $query = "INSERT INTO `admission_table`(`user_name`, `user_mail`, `user_course`) VALUES ('$name','$mail','$course')";
+
+    if (mysqli_query($connect, $query)) {
+        $submit =  true;
+    }
+}
+
+
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,6 +40,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Animations.Css CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- SEET ALERT -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   
 </head>
 
 <body>
@@ -235,82 +261,98 @@
                 <h1 class="form-head">
                     Get Admission
                 </h1>
-                <form class="form-sec">
+                <form class="form-sec" method="POST" action="<?php $_SERVER['PHP_SELF'] ?>">
                     <div class="mb-3">
+                    <?php
+                    if($submit == true){
+                       echo `<script>
+                       swal({
+                        title: "Good job!",
+                        text: "You clicked the button!",
+                        icon: "success",
+                        button: "Aww yiss!",
+                      });
+                       </script>`;
+                    }
+                    ?>
                         <label for="" class="form-label"> Enter Your Name</label>
                         <input type="text" placeholder="Enter Your Full Name" name="name" class="form-control" id="inp" aria-describedby="">
+                        <label for="exampleInputEmail1" class="form-label mt-5">Email address</label>
+                        <input type="email" name="mail" placeholder="Enter Your Valid Email Adress" required class="form-control" id="inp" aria-describedby="emailHelp">
                         <label for="" class="form-label mt-5"> Enter Your Course</label>
                         <input type="text" placeholder="Enter Your Course" name="course" class="form-control" id="inp" aria-describedby="">
-                        <label for="exampleInputEmail1" class="form-label mt-5">Email address</label>
-                        <input type="email" name="email" placeholder="Enter Your Valid Email Adress" required class="form-control" id="inp" aria-describedby="emailHelp">
+                       
+
 
                     </div>
 
                     <button type="submit" name="submit" class="form-btn mt-5">Submit</button>
+                   
                 </form>
+               
             </div>
             <!-- FOOTER SECTION -->
 
             <div id="footer">
-        <div class="container">
-            <div class="row">
+                <div class="container">
+                    <div class="row">
 
-                <div class="footer-nav col-lg-3 col-md-6 col-sm-6">
-                <a href="index.php" class="logo-link mx-5">
-                    <div class="logo">
-                        Ani's School <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
-                            <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
-                        </svg>
+                        <div class="footer-nav col-lg-3 col-md-6 col-sm-6">
+                            <a href="index.php" class="logo-link mx-5">
+                                <div class="logo">
+                                    Ani's School <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
+                                        <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                                    </svg>
+                                </div>
+
+                            </a>
+                            <div class="adress">
+                                <h5 class="adress-head">
+                                    Belgharia, <br> Nandan Nagar Office Para - 665. <br> Kolkata - 700083. <br>
+                                    Call : 91+1234567890
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="footer-icons mt-4">
+                                <ul class="ul-icons">
+                                    <h5 class="icon-head">
+                                        Find Us On
+                                    </h5>
+                                    <i class='bx bxl-facebook-circle ul-icons mt-4'></i>
+                                    <i class='bx bxl-twitter ul-icons mt-4'></i>
+                                    <i class='bx bxl-instagram ul-icons mt-4'></i>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <ul class="footer-ul1 mt-4">
+                                <h6 class="ul-head">
+                                    Quick Links
+                                </h6>
+                                <li> <a href="index.php"> Home </a> </li>
+                                <li> <a href="#course"> Course</a> </li>
+                                <li> <a href="#about"> About Us</a> </li>
+                                <li> <a href="#contact"> Contact</a> </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="info mt-3">
+                                <h3 class="info-head">
+                                    Informations For
+                                </h3>
+                                <ul class="footer-ul">
+                                    <li> <a href="#course"> Digital Marketing Course</a> </li>
+                                    <li><a href="#course"> Website Development Course</a></li>
+                                    <li><a href="#course"> Cyber Security Course</a></li>
+                                    <li><a href="#course"> Graphics & Animations Course</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
-
-                </a>
-                <div class="adress">
-                    <h5 class="adress-head">
-                        Belgharia, <br> Nandan Nagar Office Para - 665. <br> Kolkata - 700083. <br>
-                        Call : 91+1234567890
-                    </h5>
                 </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="footer-icons mt-4">
-                <ul class="ul-icons">
-                    <h5 class="icon-head">
-                        Find Us On 
-                    </h5>
-                <i class='bx bxl-facebook-circle ul-icons mt-4'></i>
-                    <i class='bx bxl-twitter ul-icons mt-4'></i>
-                    <i class='bx bxl-instagram ul-icons mt-4'></i>
-                </ul>
-                </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                <ul class="footer-ul1 mt-4">
-                    <h6 class="ul-head">
-                    Quick Links
-                    </h6>
-                    <li> <a href="index.php"> Home </a> </li>
-                    <li> <a href="#course"> Course</a> </li>
-                    <li> <a href="#about"> About Us</a> </li>
-                    <li> <a href="#contact"> Contact</a> </li>
-                </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="info mt-3">
-                    <h3 class="info-head">
-                        Informations For
-                    </h3>
-                    <ul class="footer-ul">
-                    <li> <a href="#course"> Digital Marketing Course</a> </li>
-                    <li><a href="#course"> Website Development Course</a></li>
-                    <li><a href="#course"> Cyber Security Course</a></li>
-                    <li><a href="#course"> Graphics & Animations Course</a></li>
-                    </ul>
-                </div>
-                </div>
-
             </div>
-        </div>
-    </div>
 
 
 
@@ -319,35 +361,12 @@
 
 
 
-
-
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script src="script.js"></script>
+<!-- jq cdn -->
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+                     <!-- SWEET ALERT CDN -->
+    
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script src="script.js"></script>
 </body>
 
 </html>
-
-<!--   <div class="container-fluid" id="footer">
-              <div class="row">
-                <div class="col-lg-4">
-              
-                </div>
-              
-                <div class="col-lg-4">
-              
-                </div>
-                <div class="col-lg-4">
-               
-                </div>
-
-              
-
-
-
-
-            </div>
-            </div>
-        </div>
-
-
-  -->

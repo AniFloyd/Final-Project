@@ -1,3 +1,21 @@
+<?php
+require 'config2.php';
+$submit =  false;
+if (isset($_POST['submit'])) {
+    $mail = $_POST['mail'];
+    $password = $_POST['password'];
+    $text = $_POST['text'];
+
+    $query = "INSERT INTO `contact_table`(`user_mail`, `user_password`, `user_comments`) VALUES ('$mail','$password','$text')";
+
+    if (mysqli_query($connect, $query)) {
+        $submit =  true;
+    }
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,10 +56,10 @@
 <h1 class="text-center">
     CONTACT US
 </h1>
-<form action="" method="POST">
+<form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" placeholder="Enter Your Valid Email ID" class="form-input" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="email" placeholder="Enter Your Valid Email ID" class="form-input" name="mail" id="exampleInputEmail1" aria-describedby="emailHelp">
     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
   </div>
   <div class="mb-3">
@@ -52,6 +70,12 @@
   <label for="exampleInputPassword1" class="form-label"> Comments</label>
   <input type="text" placeholder="Write Down Your Thoughts/Doubts" class="form-input" name="text" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
+  <?php
+    if($submit == true){
+        echo '<h4 class="text-center">Thank You For Your Kind Words.s </h4>';
+    }
+    
+  ?>
  <button class="contact-btn" type="submit" name="submit">
 Submit
  </button>
@@ -137,7 +161,7 @@ Submit
 
 
 
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
     <script src="script.js"></script>
 </body>
